@@ -1,0 +1,17 @@
+package whileloop;
+import java.util.*;
+
+public class hw2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the bill number of Seema:");
+		int Seema = sc.nextInt();
+		if(Seema%5==0) {
+			System.out.println("Wow you have won a gift coupon of Rs 500");
+		}
+		else {
+			System.out.println("Better Luck Next Time");
+		}
+	}
+
+}
