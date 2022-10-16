@@ -1,0 +1,29 @@
+package whileloop;
+import java.util.*;
+
+public class question3 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int value;
+		int evenCount=0, OddCount=0, zeroCount=0;
+		
+		System.out.print("Enter an integer:");
+		value = scan.nextInt();
+		
+		while(value>0) 
+		{
+			if(value%10==0) {
+				zeroCount++;
+			}
+			else if(value%2==0) {
+				evenCount++;
+			}
+			else {
+				OddCount++;
+			}value = value /10;
+		}
+		System.out.println();
+		System.out.println("Zero: "+zeroCount+"\nEven: "+evenCount+"\nOdd:  "+OddCount+"\n\n");
+	}
+
+}
